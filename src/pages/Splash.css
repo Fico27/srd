@@ -1,0 +1,66 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #483028, #282828);
+  color: #e8c8a8;
+  font-family: "Arial", sans-serif;
+}
+
+.splash-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #e8c8a8;
+  text-shadow: 1px 1px 2px #282828;
+}
+
+.splash-video {
+  margin-top: 1rem;
+  max-width: 80%;
+  max-height: 80vh;
+  border: 2px solid #282828;
+  border-radius: 8px;
+}
+
+.enter-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #b87838;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.enter-button:hover {
+  background-color: #d8a848;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .splash-heading {
+    font-size: 2rem;
+  }
+
+  .enter-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .splash-video {
+    max-width: 90%;
+    max-height: 60vh;
+  }
+}
+
+/* '#B87838', // Hat Brown - Buttons, links, highlights
+  secondaryBackground: '#483028', // Image BG - Page backgrounds, sections
+  neutralTextBase: '#E8C8A8', // Skin Light - Body text, light elements
+  darkNeutral: '#282828', // Beard - Headings, borders
+  accentPop: '#D8A848', // Gold Logo - Icons, hover effects
+  white: '#FFFFFF', // Overlays, essentials
+  black: '#000000' // Strings, essentials */
