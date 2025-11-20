@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./Splash.css";
 
 function Splash() {
+  const navigate = useNavigate();
   return (
     <div className="main-container">
       <h1 className="splash-heading">St. Srđ Periša</h1>
@@ -15,7 +17,9 @@ function Splash() {
         src="/videos/stipe-playing.mp4"
       ></video>
 
-      <button className="enter-button">Enter</button>
+      <button onClick={() => navigate("/home")} className="enter-button">
+        Enter
+      </button>
     </div>
   );
 }

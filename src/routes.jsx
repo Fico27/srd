@@ -1,4 +1,5 @@
 import Splash from "./pages/Splash";
+import Homepage from "./pages/homepage";
 
 const routes = [
   {
@@ -6,12 +7,8 @@ const routes = [
     element: <Splash />,
   },
   {
-    path: "profile/:name",
-    element: <Profile />,
-  },
-  {
-    path: "feed",
-    element: <Feed />,
+    path: "/home",
+    element: <Homepage />,
   },
 ];
 

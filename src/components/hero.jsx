@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import "./hero.css";
 
 function Hero() {
   const settings = {
