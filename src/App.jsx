@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Splash from "./pages/Splash";
 import "./App.css";
 
