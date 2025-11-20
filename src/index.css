@@ -12,6 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 a {
   font-weight: 500;
@@ -26,6 +31,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
 }

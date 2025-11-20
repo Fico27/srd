@@ -8,7 +8,6 @@ function Homepage() {
     <>
       <Nav></Nav>
       <Hero></Hero>
-      <Featured></Featured>
       <Footer></Footer>
     </>
   );

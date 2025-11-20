@@ -1,5 +1,7 @@
 import Slider from "react-slick";
 import "./hero.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Hero() {
   const settings = {
@@ -14,21 +16,21 @@ function Hero() {
 
   // Placeholder images
   const images = [
-    "https://via.placeholder.com/1200x600?text=Performance+Photo+1",
-    "https://via.placeholder.com/1200x600?text=Album+Art+2",
-    "https://via.placeholder.com/1200x600?text=Stage+Shot+3",
-    "https://via.placeholder.com/1200x600?text=Music+Event+4",
+    "https://placehold.co/1200x600",
+    "https://placehold.co/1200x600",
+    "https://placehold.co/1200x600",
+    "https://placehold.co/1200x600",
   ];
 
   return (
     <section className="hero">
+      <h1>Welcome to St. Srd Perisa's World</h1>
+      <p>Discover the rhythm and soul of blues inspired music</p>
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="slide">
             <img src={img} alt={`Slide ${index + 1}`} />
             <div className="overlay">
-              <h1>Welcome to St. Srd Perisa's World</h1>
-              <p>Discover the rhythm and soul of blues inspired music</p>
               <button className="cta-button">Explore Music</button>
             </div>
           </div>

@@ -2,18 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #282828; /* Dark neutral */
-  color: #e8c8a8; /* Neutral text */
+  width: 100%;
+  background-color: #483028;
+  color: #e8c8a8;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .header-container h2 {
-  margin: 0;
+  padding-left: 1rem;
   font-size: 1.5rem;
-  color: #d8a848; /* Gold accent */
+  color: #d8a848;
+}
+
+.nav-container {
+  padding-right: 1rem;
 }
 
 .nav-container ul {
@@ -32,7 +36,7 @@
 }
 
 .nav-container a:hover {
-  color: #b87838; /* Hat brown highlight */
+  color: #b87838;
 }
 
 @media (max-width: 768px) {
