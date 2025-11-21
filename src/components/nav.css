@@ -39,6 +39,11 @@
   color: #b87838;
 }
 
+.active {
+  color: #d8a848;
+  border-bottom: 2px solid #d8a848;
+}
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;

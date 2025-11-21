@@ -1,4 +1,5 @@
 import "./nav.css";
+import { NavLink } from "react-router";
 
 function Nav() {
   return (
@@ -7,10 +8,15 @@ function Nav() {
       <div className="nav-container">
         <ul>
           <li>
-            <a href="">Home</a>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/home"
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="">Music</a>
+            <NavLink to="/music">Music</NavLink>
           </li>
           <li>
             <a href="">About Me</a>
