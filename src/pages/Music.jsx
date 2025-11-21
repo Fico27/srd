@@ -1,15 +1,15 @@
 import Nav from "../components/nav";
-import Hero from "../components/hero";
+import MusicContainer from "../components/music-container";
 import Footer from "../components/footer";
 
-function Homepage() {
+function Music() {
   return (
     <>
       <Nav></Nav>
-      <Hero></Hero>
+      <MusicContainer></MusicContainer>
       <Footer></Footer>
     </>
   );
 }
 
-export default Homepage;
+export default Music;

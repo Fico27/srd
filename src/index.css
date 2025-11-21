@@ -12,10 +12,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  height: 100%;
+}
 #root {
+  display: flex;
+  flex-direction: column;
+  place-items: space-between;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
 }
 
 a {
@@ -30,10 +37,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: space-between;
   width: 100%;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 h1 {
