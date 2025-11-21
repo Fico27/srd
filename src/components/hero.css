@@ -4,23 +4,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: auto;
-  /* overflow: hidden; */
   width: 100%;
   margin-top: 2rem;
-  height: auto;
+  flex: 1;
 }
-
-/* .hero .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #000000;
-  z-index: 2;
-} */
 
 .overlay {
   display: flex;

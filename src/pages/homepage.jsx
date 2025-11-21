@@ -4,11 +4,11 @@ import Footer from "../components/footer";
 
 function Homepage() {
   return (
-    <>
+    <div className="page">
       <Nav></Nav>
       <Hero></Hero>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 

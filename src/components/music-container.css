@@ -1,0 +1,11 @@
+.music-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* or flex-start if you prefer */
+  align-items: center;
+}
+
+iframe {
+  margin-bottom: 1rem;
+}

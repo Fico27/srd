@@ -4,11 +4,11 @@ import Footer from "../components/footer";
 
 function Music() {
   return (
-    <>
+    <div className="page">
       <Nav></Nav>
       <MusicContainer></MusicContainer>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 
