@@ -3,23 +3,28 @@ import "./Splash.css";
 
 function Splash() {
   const navigate = useNavigate();
+
   return (
     <div className="main-container">
-      <h1 className="splash-heading">St. Srđ Periša</h1>
+      {/* LEFT SIDE – VIDEO */}
+      <div className="video-container">
+        <video
+          className="splash-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/videos/stipe-playing.mp4"
+        />
+      </div>
 
-      <video
-        className="splash-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-        controls={false}
-        src="/videos/stipe-playing.mp4"
-      ></video>
-
-      <button onClick={() => navigate("/home")} className="enter-button">
-        Enter
-      </button>
+      {/* RIGHT SIDE – TEXT (only visible on desktop, centered on mobile) */}
+      <div className="text-container">
+        <h1 className="splash-heading">St. Srđ Periša</h1>
+        <button onClick={() => navigate("/home")} className="enter-button">
+          Enter
+        </button>
+      </div>
     </div>
   );
 }
