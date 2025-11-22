@@ -6,10 +6,8 @@ function Hero() {
 
   return (
     <section className="hero">
-      <h1>Welcome to St. Srd Perisa's World</h1>
-      <p>Discover the rhythm and soul of blues inspired music</p>
-      <div className="overlay">
-        <img src="https://placehold.co/1200x600" alt="" />
+      <div className="hero-content">
+        <p>Discover the rhythm and soul of blues inspired music</p>
         <button onClick={() => navigate("/music")} className="cta-button">
           Explore Music
         </button>

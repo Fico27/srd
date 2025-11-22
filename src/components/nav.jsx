@@ -1,9 +1,20 @@
 import "./nav.css";
 import { NavLink } from "react-router";
+import { useState, useEffect } from "react";
 
 function Nav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="header-container">
+    <div className={`header-container ${scrolled ? "scrolled" : ""}`}>
       <h2>St. Srd Perisa</h2>
       <div className="nav-container">
         <ul>
@@ -19,10 +30,10 @@ function Nav() {
             <NavLink to="/music">Music</NavLink>
           </li>
           <li>
-            <a href="">About Me</a>
+            <a href="#about">About Me</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
