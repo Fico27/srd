@@ -5,9 +5,12 @@ import Footer from "../components/footer";
 function Music() {
   return (
     <div className="page">
-      <Nav></Nav>
-      <MusicContainer></MusicContainer>
-      <Footer></Footer>
+      <Nav />
+
+      <div className="page-content">
+        <MusicContainer />
+        <Footer />
+      </div>
     </div>
   );
 }

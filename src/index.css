@@ -68,6 +68,14 @@ button:focus-visible {
   min-height: 100vh;
 }
 
+.page-content {
+  padding-top: 250px;
+}
+
+/* .header-container.scrolled ~ .page-content {
+  padding-top: 120px;
+} */
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

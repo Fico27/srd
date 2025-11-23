@@ -1,6 +1,7 @@
 import Splash from "./pages/Splash";
 import Homepage from "./pages/homepage";
 import Music from "./pages/Music";
+import AboutPage from "./pages/aboutpage";
 
 const routes = [
   {
@@ -14,6 +15,10 @@ const routes = [
   {
     path: "/music",
     element: <Music />,
+  },
+  {
+    path: "/about-me",
+    element: <AboutPage />,
   },
 ];
 
