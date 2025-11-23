@@ -5,3 +5,7 @@
   justify-content: center; /* or flex-start if you prefer */
   align-items: center;
 }
+
+.about-me p {
+  width: 40%;
+}

@@ -18,6 +18,7 @@
 
 .hero-content {
   position: relative;
+  top: 250px;
   z-index: 2;
   text-align: center;
   color: #e8c8a8;
@@ -50,7 +51,32 @@
   transform: translateY(-3px);
 }
 
+/* Hero 2 */
+
+.hero2 {
+  position: relative;
+  min-height: 100vh;
+  background: url("/olovni-ples.jpg") center center / cover no-repeat fixed;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hero 2 */
+
 @media (max-width: 768px) {
+  .hero-content {
+    top: 150px;
+  }
   .hero-content h1 {
     font-size: 3rem;
   }

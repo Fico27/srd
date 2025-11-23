@@ -3,7 +3,7 @@ import "./about-me.css";
 function AboutMe() {
   return (
     <section className="about-me">
-      <h2>O Meni</h2>
+      <h2>Stipe Perisa</h2>
       <p>
         Stipe Periša je hrvatski blues i folk-rock kantautor iz Dugog Sela,
         negdašnji član rock sastava "Olovni Ples". Piše pjesme i uglazbljuje

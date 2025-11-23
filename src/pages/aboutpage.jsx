@@ -1,5 +1,5 @@
 import Nav from "../components/nav";
-import Hero from "../components/hero";
+import Hero2 from "../components/hero2";
 import Footer from "../components/footer";
 import AboutMe from "../components/about-me";
 
@@ -7,10 +7,9 @@ function AboutPage() {
   return (
     <div className="page">
       <Nav></Nav>
-      <div className="page-content">
-        <AboutMe />
-        <Footer />
-      </div>
+      <Hero2 />
+      <AboutMe />
+      <Footer />
     </div>
   );
 }
