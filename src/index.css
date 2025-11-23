@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  --header-h: 130px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-y: auto;
 }
 #root {
   display: flex;
@@ -64,6 +65,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {

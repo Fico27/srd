@@ -1,10 +1,12 @@
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background: url("/hero-image.jpeg") center center / cover no-repeat fixed;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .hero::before {
