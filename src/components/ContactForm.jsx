@@ -3,7 +3,7 @@ import "./contact-form.css";
 
 export default function ContactForm() {
   const formRef = useRef(null);
-  const [readyAt] = useState(Date.now());
+  const [readyAt] = useState(() => Date.now());
   const [tsReady, setTsReady] = useState(false); // token present?
 
   // Load Turnstile script once
