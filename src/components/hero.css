@@ -73,6 +73,28 @@
 
 /* Hero 2 */
 
+/* Hero 4 */
+
+.hero4 {
+  position: relative;
+  min-height: 100vh;
+  background: url("/hero4.jpg") center center / cover no-repeat fixed;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hero 4 */
+
 @media (max-width: 768px) {
   .hero-content {
     top: 150px;

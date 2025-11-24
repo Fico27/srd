@@ -33,7 +33,7 @@ function Nav() {
             <NavLink to="/about-me">About Me</NavLink>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <NavLink to="/contact">Contact me</NavLink>
           </li>
         </ul>
       </div>

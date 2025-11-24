@@ -3,7 +3,7 @@ import "./music-container.css";
 function MusicContainer() {
   return (
     <div className="music-container">
-      <h2>Check out my latest</h2>
+      <h2>Check Out My Latest Music Videos</h2>
       <div className="video-container">
         <iframe
           width="560"
