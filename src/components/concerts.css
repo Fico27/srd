@@ -1,0 +1,47 @@
+.concerts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.concerts h2 {
+  font-size: 3rem;
+}
+
+.concerts ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.concerts li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 2rem;
+}
+
+.concerts-ul {
+  width: 70%;
+  border: 2px solid white;
+}
+
+.concert {
+  border-bottom: 1px solid white;
+}
+
+.concert:last-of-type {
+  border-bottom: none;
+}
+
+.concert h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}

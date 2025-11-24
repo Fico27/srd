@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./concerts.css";
 
 const CAL_ID = import.meta.env.VITE_CAL_ID;
 const API_KEY = import.meta.env.VITE_GOOGLE_API;
@@ -43,7 +44,7 @@ function Concerts() {
   return (
     <section className="concerts">
       <h2>Upcoming Shows</h2>
-      <ul>
+      <ul className="concerts-ul">
         {events.map((ev) => {
           const dt = new Date(ev.start);
           const friendly = dt.toLocaleString(undefined, {
@@ -55,9 +56,17 @@ function Concerts() {
           });
           return (
             <li key={ev.id} className="concert">
-              <div className="when">{friendly}</div>
-              <div className="what">{ev.title}</div>
-              {ev.venue && <div className="where">{ev.venue}</div>}
+              <h3 className="what">{ev.title}</h3>
+              <div className="when">
+                {" "}
+                <b></b> {friendly}
+              </div>
+              {ev.venue && (
+                <div className="where">
+                  {" "}
+                  <b></b> {ev.venue}
+                </div>
+              )}
             </li>
           );
         })}
