@@ -65,10 +65,15 @@
 }
 
 @media (max-width: 768px) {
+  .header-container {
+    padding-top: 2rem;
+  }
+
   .header-container h2 {
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 6px;
   }
+
   .nav-container ul {
     gap: 25px;
     font-size: 16px;
