@@ -10,6 +10,15 @@
   font-size: 3rem;
 }
 
+/* .concerts h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  margin: 0.5rem auto 0;
+} */
+
 .concerts ul {
   display: flex;
   flex-direction: column;
@@ -25,18 +34,17 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .concerts-ul {
   min-width: 40%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
   height: 50%;
 }
 
-.concert {
+/* .concert {
   border-bottom: 1px solid white;
-}
+} */
 
 .concert:last-of-type {
   border-bottom: none;
@@ -44,11 +52,25 @@
 
 .concert h3 {
   font-size: 2rem;
-  margin: 0;
+  margin-bottom: 0.5rem;
+  /* border-bottom: 1px solid white; */
+}
+
+.concert h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  margin: 0.5rem auto 0;
 }
 
 .what {
   color: #d8a848;
+}
+.where {
+  width: 70%;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
