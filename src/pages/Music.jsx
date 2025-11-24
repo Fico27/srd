@@ -1,16 +1,15 @@
 import Nav from "../components/nav";
 import MusicContainer from "../components/music-container";
 import Footer from "../components/footer";
+import Hero3 from "../components/hero3";
 
 function Music() {
   return (
     <div className="page">
       <Nav />
-
-      <div className="page-content">
-        <MusicContainer />
-        <Footer />
-      </div>
+      <Hero3 />
+      <MusicContainer />
+      <Footer />
     </div>
   );
 }
