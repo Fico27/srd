@@ -3,7 +3,7 @@ import "./footer.css";
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2025 St. Srd Perisa. All rights reserved.</p>
+      <p>&copy; 2025 St. Srđ Periša. All rights reserved.</p>
       <a href="https://www.youtube.com/@Natikache/videos">
         <img
           src="/youtube-icon.svg"

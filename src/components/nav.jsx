@@ -15,7 +15,7 @@ function Nav() {
 
   return (
     <div className={`header-container ${scrolled ? "scrolled" : ""}`}>
-      <h2>St. Srd Perisa</h2>
+      <h2>St. Srđ Periša</h2>
       <div className="nav-container">
         <ul>
           <li>
