@@ -39,7 +39,13 @@ function Concerts() {
   }, []);
 
   if (loading) return <p>Loading shows…</p>;
-  if (!events.length) return <p>No upcoming shows yet. Check back soon!</p>;
+  if (!events.length)
+    return (
+      <div className="concerts">
+        <h2>Upcoming Shows</h2>
+        <p>No upcoming shows yet. Stay tuned! (Ha Ha!)</p>
+      </div>
+    );
 
   return (
     <section className="concerts">
