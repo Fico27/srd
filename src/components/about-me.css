@@ -15,10 +15,17 @@
   color: #d8a848;
 }
 
+.about-me img {
+  width: 25%;
+}
+
 @media (max-width: 768px) {
   .about-me p {
     padding: 0 2rem;
     max-width: 100%;
     text-align: center;
+  }
+  .about-me img {
+    width: 50%;
   }
 }
