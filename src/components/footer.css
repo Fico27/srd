@@ -5,3 +5,29 @@ footer {
   font-size: 0.9rem;
   background: #000;
 }
+
+footer img {
+  width: 25px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+  filter: invert(0.3) sepia(1) saturate(5) hue-rotate(330deg);
+}
+
+.social-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
