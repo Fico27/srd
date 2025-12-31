@@ -7,7 +7,7 @@ function Splash() {
   return (
     <div className="main-container">
       {/* LEFT SIDE – VIDEO */}
-      <div className="bit-container">
+      {/* <div className="bit-container">
         <video
           className="splash-video"
           autoPlay
@@ -15,6 +15,17 @@ function Splash() {
           muted
           playsInline
           src="/videos/stipe-playing.mp4"
+        />
+      </div> */}
+
+      <div className="bit-container">
+        <video
+          className="splash-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/videos/GRICH2.mp4"
         />
       </div>
 
